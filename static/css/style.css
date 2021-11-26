@@ -1,0 +1,27 @@
+body {
+    background-color:teal;
+
+
+
+}
+
+
+
+.navmain {
+    color: rgb(23, 100, 163);
+    margin: 35px;
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+}
+
+.nvhr{
+    border: 3px solid green;
+    border-radius: 1px;
+}
+
+  
+  
+  
+  
+  
