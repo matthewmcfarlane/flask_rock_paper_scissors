@@ -7,9 +7,12 @@
 <h2>{{ again }}</h2>
 </section>
 
-<a href="/pvcpu/">Play against the computer!</a>
+<div class="container">
+<a class="rps" href="{{ reset }}rock/"><img src="/static/images/rock1.png" alt="Rock"></a>
+<a class="rps" href="{{ reset }}paper/"><img src="/static/images/paper1.png" alt="Paper"></a>
+<a class="rps" href="{{ reset }}scissors/"><img src="/static/images/scissors1.png" alt="Scissors"></a>
+</div>
+<a href="play/">Play against the computer!</a>
 
-<a href="{{ reset }}rock/"><img src="/static/images/rock1.png" alt="Rock"></a>
-<a href="{{ reset }}paper/"><img src="/static/images/paper1.png" alt="Paper"></a>
-<a href="{{ reset }}scissors/"><img src="/static/images/scissors1.png" alt="Scissors"></a>
+
 {% endblock content %}

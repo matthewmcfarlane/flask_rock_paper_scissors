@@ -1,26 +1,54 @@
 body {
     background-color:teal;
+    text-align: center;
+    color: rgb(66, 36, 36);
 
 
 
 }
 
+.container{
+    text-align:center;
+}
 
+.rps{
+    display:inline-block;
+    margin:5px 20px;
+    padding:5px;
+    
+}
 
 .navmain {
     color: rgb(23, 100, 163);
-    margin: 35px;
-    font-size: 25px;
+    margin: 30px;
+    font-size: 30px;
     text-align: center;
     position: relative;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.navmain > a{
+    text-decoration: none;
+    padding: 15px;
+    color:lavenderblush;
 }
 
 .nvhr{
-    border: 3px solid green;
+    border: 3px solid midnightblue;
     border-radius: 1px;
+
 }
 
-  
+.navcont{
+    background-color: #B6A19e;
+    
+    
+}
+
+#header {
+   display: block;
+}
   
   
   

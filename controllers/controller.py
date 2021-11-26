@@ -1,7 +1,7 @@
-from flask import render_template, request
+from flask import render_template
 from app import app
 from models.player import Player
-from models.game import choices, determine_winner
+from models.game import Game
 
 @app.route('/')
 def index():
@@ -14,6 +14,7 @@ def page_not_found(e):
 @app.route('/<id>/')
 def player_1_choice(id):
     choice_p1 = id.lower().strip()
+    choices = Game().choices
     if choice_p1 in choices:
         return render_template('index.html', currentpath=id ,title='In-Game', stage='Player 2, make your move!')
     else:
@@ -23,7 +24,7 @@ def player_1_choice(id):
 def player_2_choice(id1, id2):
     choice_p1 = id1.lower().strip()
     choice_p2 = id2.lower().strip()
-    result = determine_winner(choice_p1, choice_p2)
+    result = Game.determine_winner(choice_p1, choice_p2)
     if result == None:
         return render_template("404.html")
     else:

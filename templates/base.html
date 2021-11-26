@@ -1,15 +1,17 @@
 <html>
-    <head>
+    <head id="header">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
         <title>{{ title }}</title>
     </head>
     <body>
+        <div class="navcont">
         <nav class="navmain">
             <a href="/">Home</a>
             <a href="/rules/">How to Play</a>
         </nav>
         <hr class="nvhr">
+    </div>
 
         {% block content %}
             
