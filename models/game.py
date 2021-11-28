@@ -5,22 +5,44 @@ class Game:
 
     def determine_winner(player_1, player_2):
         if player_1 == 'rock' and player_2 == 'rock':
-            return "It's a Draw! - Go again!"
+            return "You both chose rock! - Go again"
         elif player_1 == 'paper' and player_2 =='paper':
-            return "It's a Draw! - Go again!"
+            return "You both chose paper! - Go again"
         elif player_1 == 'scissors' and player_2 =='scissors':
-            return "It's a Draw! - Go again!"
+            return "You both chose scissors! - Go again"
         elif player_1 == 'rock' and player_2 =='paper':
-            return "Player 2 Wins! - Go again!"
+            return f"Player 1 chose {player_1} and the player 2 chose {player_2}, Player 2 wins - Go again!"
         elif player_1 == 'paper' and player_2 =='scissors':
-            return "Player 2 Wins! - Go again!"
+            return f"Player 1 chose {player_1} and the player 2 chose {player_2}, Player 2 wins - Go again!"
         elif player_1 == 'scissors' and player_2 =='rock':
-            return "Player 2 Wins! - Go again!"
+            return f"Player 1 chose {player_1} and the player 2 chose {player_2}, Player 2 wins - Go again!"
         elif player_1 == 'paper' and player_2 =='rock':
-            return "Player 1 Wins! - Go again!"
+            return f"Player 1 chose {player_1} and the player 2 chose {player_2}, Player 1 wins - Go again!"
         elif player_1 == 'scissors' and player_2 =='paper':
-            return "Player 1 Wins! - Go again!"
+            return f"Player 1 chose {player_1} and the player 2 chose {player_2}, Player 1 wins - Go again!"
         elif player_1 == 'rock' and player_2 =='scissors':
-            return "Player 1 Wins! - Go again!"
+            return f"Player 1 chose {player_1} and the player 2 chose {player_2}, Player 1 wins - Go again!"
+        else:
+            return None
+
+    def determine_winner_cpu(player_1, cpu):
+        if player_1 == 'rock' and cpu == 'rock':
+            return "You both chose rock! - Go again"
+        elif player_1 == 'paper' and cpu =='paper':
+            return "You both chose paper! - Go again!"
+        elif player_1 == 'scissors' and cpu =='scissors':
+            return "You both chose scissors! - Go again!"
+        elif player_1 == 'rock' and cpu =='paper':
+            return f"You chose {player_1} and the computer chose {cpu}, Computer Wins! - Go again!"
+        elif player_1 == 'paper' and cpu =='scissors':
+            return f"You chose {player_1} and the computer chose {cpu}, Computer Wins! - Go again!"
+        elif player_1 == 'scissors' and cpu =='rock':
+            return f"You chose {player_1} and the computer chose {cpu}, Computer Wins! - Go again!"
+        elif player_1 == 'paper' and cpu =='rock':
+            return f"You chose {player_1} and the computer chose {cpu}, You Win! - Go again!"
+        elif player_1 == 'scissors' and cpu =='paper':
+            return f"You chose {player_1} and the computer chose {cpu}, You Win! - Go again!"
+        elif player_1 == 'rock' and cpu =='scissors':
+            return f"You chose {player_1} and the computer chose {cpu}, You Win! - Go again!"
         else:
             return None

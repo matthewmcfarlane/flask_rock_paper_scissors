@@ -33,6 +33,10 @@ body {
     padding: 15px;
     color:lavenderblush;
 }
+.navmain > a:hover{
+    background-color: black;
+    color: green;
+}
 
 .nvhr{
     border: 3px solid midnightblue;
